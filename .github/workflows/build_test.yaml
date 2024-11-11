@@ -26,7 +26,7 @@ jobs:
       - name: Link with flake8 [debugging python syntax]
         run: |
           # stop the build if there are Python syntax errors or undefined names
-          flake8 . --count --select=E9,E402, F63,F7,F82 --ignore=F541,W503 --show-source --statistics
+          flake8 . --count --select=E9,F63,F7,F82 --ignore=F541,E402,W503 --show-source --statistics
           # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
           flake8 . --count --ignore=F541,E402,W503 --max-complexity=20 --max-line-length=127 --statistics
 
