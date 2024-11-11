@@ -26,7 +26,10 @@ setuptools.setup(
     extras_require={
         "test": ["pytest"],
     },
-    package_dir={"": "src"},
+    package_dir={
+        "": "src",
+        "tests": "tests",
+    },
     packages=setuptools.find_packages(where="src"),
     classifiers=[
         "Development Status :: 3 - Alpha",
