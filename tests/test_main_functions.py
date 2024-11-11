@@ -1,6 +1,8 @@
+import sys
+
 import cv2
 import pytest
-import sys
+
 sys.path.append("src")
 
 # sys.path.append("src")
