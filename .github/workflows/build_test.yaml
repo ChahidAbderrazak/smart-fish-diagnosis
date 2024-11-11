@@ -1,0 +1,38 @@
+name: Build & Test Python codes
+on: [push]
+# on:
+#   release:
+#     types: [published]
+    
+env:
+  PYTHON_VERSION: "3.8"
+
+jobs:
+  build_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{env.PYTHON_VERSION}}
+        uses: actions/setup-python@v3
+        with:
+          python-version: ${{env.PYTHON_VERSION}}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install flake8 pytest
+          # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          # if [ -f src/requirements.txt ]; then pip install -r src/requirements.txt; fi
+
+      - name: Link with flake8 [debugging python syntax]
+        run: |
+          # stop the build if there are Python syntax errors or undefined names
+          flake8 . --count --select=E9,F63,F7,F82 --ignore=F541,W503 --show-source --statistics
+          # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+          flake8 . --count --ignore=F541,W503 --max-complexity=20 --max-line-length=127 --statistics
+          
+      - name: Test the code using Pytest 
+        run: |
+          # TODO: code how to skip tests which do not work on github actions
+          echo "Pytest ignored and tested locally, because it does not work with GitHub action"
+          pytest --verbose
+

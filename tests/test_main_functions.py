@@ -15,6 +15,7 @@ from test_variables import (
     val_iou_list,
 )
 
+from lib import logger
 from lib.Autils_Object_detection import (
     auto_epochs_definition,
     save_model_for_inference,
@@ -87,7 +88,7 @@ class Test_IOU:
             for box in boxes:
                 try:
                     x1, y1, x2, y2 = box
-                    logger.infox1, y1, x2, y2)
+                    logger.info(x1, y1, x2, y2)
 
                     cv2.rectangle(
                         image,
