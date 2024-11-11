@@ -1,5 +1,7 @@
 import cv2
 import pytest
+import sys
+sys.path.append("src")
 
 # sys.path.append("src")
 from test_variables import (
