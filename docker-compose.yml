@@ -11,7 +11,7 @@ services:
       context: .
       dockerfile: Dockerfile
 
-    image: ${APP_CNTNR_NAME}:${VERSION}
+    image: ${APP_IMG_BUILDER}:${VERSION}
     container_name: '${APP_CNTNR_NAME}'
     environment:
       - APP_SERVER_PORT=${APP_SERVER_PORT}
@@ -28,6 +28,6 @@ services:
       - './artifacts:/app/artifacts'
       - './config:/app/config'
       - './data:/app/data'
-    command: 'python src/main.py'
+    command: 'bash'
 
 

@@ -1,6 +1,6 @@
 
 **/venv/**
-**.env
+# **.env
 **.env-ip
 **/.ipynb_checkpoints/**
 **/dev/**
