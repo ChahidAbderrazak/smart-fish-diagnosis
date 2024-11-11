@@ -33,6 +33,9 @@ jobs:
       - name: Test the code using Pytest 
         run: |
           # TODO: code how to skip tests which do not work on github actions
+          echo "--------------------------"
+          ls
+          echo "--------------------------"
           echo "Pytest ignored and tested locally, because it does not work with GitHub action"
           pytest --verbose
 
