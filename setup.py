@@ -1,6 +1,6 @@
 import os
 
-import setuptools
+from setuptools import setup, find_packages
 
 PROJECT_NAME = "Object Detection"
 PROJECT_DESCRIPTION = " Example of Object Detection for Fish diagnosis"
@@ -13,8 +13,8 @@ AUTHOR_EMAIL = "abderrazak.chahid@gmail.com"
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
-
-setuptools.setup(
+# setup the project
+setup(
     name=PROJECT_NAME,
     version=VERSION,
     author=AUTHOR_USER_NAME,
@@ -27,10 +27,9 @@ setuptools.setup(
         "test": ["pytest"],
     },
     package_dir={
-        "": "src",
-        "tests": "tests",
+        "": "."
     },
-    packages=setuptools.find_packages(where="src"),
+    packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Topic :: Utilities",

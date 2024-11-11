@@ -1,29 +1,29 @@
-############ Deep learning packages
-torch
-torchvision
-tensorflow
-tensorboard
-torchviz
-ensemble_boxes
-albumentations==1.1.0
-tensorboard
-
-##### Deep learning packages
-tensorflow
+# ############ Deep learning packages
 # torch
-scikit-learn
-hyperopt
-optuna
-xgboost
+# torchvision
+# tensorflow
+# tensorboard
+# torchviz
+# ensemble_boxes
+# albumentations==1.1.0
+# tensorboard
 
-######### Image processing  packages
-# opencv-python
-# opencv-python-headless==4.5.3.56
-scikit-image
+# ##### Deep learning packages
+# tensorflow
+# # torch
+# scikit-learn
+# hyperopt
+# optuna
+# xgboost
 
-######### Visualization packages
-seaborn
-plotly 
+# ######### Image processing  packages
+# # opencv-python
+# # opencv-python-headless==4.5.3.56
+# scikit-image
+
+# ######### Visualization packages
+# seaborn
+# plotly 
 
 # # ######## Web API packages
 # fastapi 
