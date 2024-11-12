@@ -49,7 +49,7 @@ PyYAML
 tqdm
 glob2
 
-## setup the project packages
--e .
+# ## setup the project packages
+# -e .
 
 
