@@ -37,5 +37,5 @@ jobs:
           echo "---------------------------------------------------"
           # TODO: code how to skip tests which do not work on github actions
           echo "Some Pytest might be ignored, because it does not work with GitHub action"
-          python -m pytest tests/  --verbose
+          python -m pytest --verbose
 
