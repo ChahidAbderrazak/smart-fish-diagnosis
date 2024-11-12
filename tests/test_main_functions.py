@@ -1,9 +1,5 @@
-import sys
-
 import cv2
 import pytest
-
-sys.path.append("src")
 
 # sys.path.append("src")
 from test_variables import (
@@ -25,6 +21,8 @@ from lib.Autils_Object_detection import (
     save_model_for_inference,
 )
 from lib.utils import compute_average_IOU
+
+# sys.path.append("src")
 
 
 @pytest.mark.skipif(True, reason="  skipped by Developer")
