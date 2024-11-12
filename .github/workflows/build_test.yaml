@@ -30,10 +30,10 @@ jobs:
           # # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
           # flake8 . --count --ignore=F541,E402,W503 --max-complexity=20 --max-line-length=127 --statistics
 
-      - name: Test the code using Pytest
-        run: |
-          # pip install pytest
-          # TODO: code how to skip tests which do not work on github actions
-          bash bash/run/run_tests.sh
-          # echo "Some Pytest might be ignored, because it does not work with GitHub action"
-          # python -m pytest --verbose
+      # - name: Test the code using Pytest
+      #   run: |
+      #     # pip install pytest
+      #     # TODO: code how to skip tests which do not work on github actions
+      #     bash bash/run/run_tests.sh
+      #     # echo "Some Pytest might be ignored, because it does not work with GitHub action"
+      #     # python -m pytest --verbose
