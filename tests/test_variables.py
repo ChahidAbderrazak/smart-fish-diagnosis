@@ -3,9 +3,9 @@
 import numpy as np
 
 # sys.path.append("src")
-from lib.Autils_Object_detection import load_class_dict
-from lib.networks import get_model_instance
-from lib.utils import extract_experiment_parameters
+from src.lib.Autils_Object_detection import load_class_dict
+from src.lib.networks import get_model_instance
+from src.lib.utils import extract_experiment_parameters
 
 # configuration file
 config_file = "config/config.yml"

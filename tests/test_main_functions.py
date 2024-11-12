@@ -1,6 +1,6 @@
 # import cv2
 # import pytest
-from test_variables import (
+from tests.test_variables import (
     DIR_DEPLOY,
     CLASS_dict,
     device,
@@ -15,14 +15,12 @@ from test_variables import (
 
 # import sys
 # sys.path.append("src")
-from lib import logger
-from lib.Autils_Object_detection import (
+from src.lib import logger
+from src.lib.Autils_Object_detection import (
     auto_epochs_definition,
     save_model_for_inference,
 )
-from lib.utils import compute_average_IOU
-
-# sys.path.append("src")
+from src.lib.utils import compute_average_IOU
 
 
 # @pytest.mark.skipif(True, reason="  skipped by Developer")
