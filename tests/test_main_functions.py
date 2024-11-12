@@ -24,7 +24,7 @@ from lib.utils import compute_average_IOU
 # sys.path.append("src")
 
 
-@pytest.mark.skipif(True, reason="  skipped by Developer")
+# @pytest.mark.skipif(True, reason="  skipped by Developer")
 class TestDataset:
 
     def test_generate_data(self):
@@ -70,7 +70,7 @@ class Test_TrainingModules:
         )
 
 
-@pytest.mark.skipif(True, reason="  skipped by Developer")
+# @pytest.mark.skipif(True, reason="  skipped by Developer")
 class Test_IOU:
 
     def test_IOU(self):
