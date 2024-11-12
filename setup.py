@@ -27,10 +27,8 @@ setup(
     extras_require={
         "test": ["pytest"],
     },
-    package_dir={
-        "": "src"
-    },
-    packages=find_packages("src"),
+    package_dir={"": "src"},
+    packages=find_packages("src") + find_packages("src/lib"),
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Topic :: Utilities",
