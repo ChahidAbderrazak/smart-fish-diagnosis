@@ -34,7 +34,7 @@ jobs:
         run: |
           # pip install pytest
           echo "---------------------------------------------------"
-          python -c "import sys;print(sys.path)"
+          python tests/test_variables.py
           echo "---------------------------------------------------"
           # TODO: code how to skip tests which do not work on github actions
           echo "Some Pytest might be ignored, because it does not work with GitHub action"

@@ -9,6 +9,7 @@ from lib.utils import extract_experiment_parameters
 # configuration file
 config_file = "config/config.yml"
 
+print(sys.path)
 # extract the parameters from the config_file
 (
     device,
