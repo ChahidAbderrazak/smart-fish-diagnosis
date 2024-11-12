@@ -1,7 +1,6 @@
-# import cv2
-# import pytest
+import cv2
+import pytest
 
-# sys.path.append("src")
 from test_variables import (
     DIR_DEPLOY,
     CLASS_dict,
