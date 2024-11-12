@@ -1,6 +1,6 @@
-# import cv2
-# import pytest
-from tests.test_variables import (
+import cv2
+import pytest
+from tests.test_configuration import (
     DIR_DEPLOY,
     CLASS_dict,
     device,
