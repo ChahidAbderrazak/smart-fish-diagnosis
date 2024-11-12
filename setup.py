@@ -28,7 +28,7 @@ setup(
         "test": ["pytest"],
     },
     package_dir={"": "."},
-    packages=find_packages(),
+    packages=find_packages(where="."),
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Topic :: Utilities",
