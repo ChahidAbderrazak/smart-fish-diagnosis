@@ -1,0 +1,55 @@
+############ Deep learning packages
+torch
+torchvision
+tensorflow
+tensorboard
+torchviz
+ensemble_boxes
+albumentations==1.1.0
+tensorboard
+scikit-learn
+
+##### Fine-tuning  packages
+hyperopt
+optuna
+xgboost
+
+######### Image processing  packages
+# opencv-python
+# opencv-python-headless==4.5.3.56
+scikit-image
+
+# ######### Visualization packages
+# seaborn
+# plotly 
+
+# # ######## Web API packages
+# fastapi 
+# uvicorn
+# Jinja2
+# python-multipart
+
+# ##### MySQL packages
+# mysql-connector-python  # MySQL
+# psycopg2 # PostgreSQLs
+
+##### development
+# jupyterlab
+pytest
+flake8
+black
+
+##### General packages
+matplotlib
+numpy
+pandas
+python-box==6.0.2
+ensure==1.0.2
+PyYAML
+tqdm
+glob2
+
+## setup the project packages
+-e .
+
+

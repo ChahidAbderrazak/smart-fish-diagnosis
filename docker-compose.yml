@@ -1,0 +1,33 @@
+version: "3.7"
+
+networks:
+  net:
+    driver: bridge
+
+services:
+  #--------------  PROJECT APP --------------
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    image: ${APP_IMG_BUILDER}:${VERSION}
+    container_name: '${APP_CNTNR_NAME}'
+    environment:
+      - APP_SERVER_PORT=${APP_SERVER_PORT}
+      - PYTHON_VERSION=${PYTHON_VERSION}
+
+    ports:
+      - '${APP_HOST_PORT}:${APP_SERVER_PORT}'
+      
+    networks:
+      - net
+    # network_mode: host
+
+    volumes: 
+      - './artifacts:/app/artifacts'
+      - './config:/app/config'
+      - './data:/app/data'
+    command: 'bash'
+
+
