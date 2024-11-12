@@ -1,7 +1,10 @@
+import os
 import sys
+
 import numpy as np
-sys.path.append("src")
-sys.path.append("../src")
+
+sys.path.append(os.path.join(os.getcwd(), "src"))
+sys.path.append(os.path.join(os.getcwd(), "src", "lib"))
 print(sys.path)
 
 from lib.Autils_Object_detection import load_class_dict
