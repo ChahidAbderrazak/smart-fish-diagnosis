@@ -33,6 +33,7 @@ jobs:
       - name: Test the code using Pytest
         run: |
           # pip install pytest
+          pwd
           echo "---------------------------------------------------"
           python tests/test_variables.py
           echo "---------------------------------------------------"
