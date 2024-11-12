@@ -34,5 +34,6 @@ jobs:
         run: |
           # pip install pytest
           # TODO: code how to skip tests which do not work on github actions
-          echo "Some Pytest might be ignored, because it does not work with GitHub action"
-          pytest --verbose
+          bash bash/run/run_tests.sh
+          # echo "Some Pytest might be ignored, because it does not work with GitHub action"
+          # python -m pytest --verbose
