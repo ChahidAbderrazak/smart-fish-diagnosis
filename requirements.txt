@@ -34,7 +34,7 @@ scikit-image
 # psycopg2 # PostgreSQLs
 
 ##### development
-jupyterlab
+# jupyterlab
 pytest
 flake8
 black

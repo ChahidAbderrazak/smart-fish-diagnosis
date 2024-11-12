@@ -27,10 +27,8 @@ setup(
     extras_require={
         "test": ["pytest"],
     },
-    package_dir={
-        "": "."
-    },
-    packages=find_packages(),
+    package_dir={"": "."},
+    packages=find_packages(where="."),
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Topic :: Utilities",
