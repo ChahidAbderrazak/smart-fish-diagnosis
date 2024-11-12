@@ -33,11 +33,11 @@
 # # mysql-connector-python  # MySQL
 # # psycopg2 # PostgreSQLs
 
-# ##### development
+##### development
 # jupyterlab
-# pytest
-# flake8
-# black
+pytest
+flake8
+black
 
 ##### General packages
 matplotlib
