@@ -1,12 +1,4 @@
-import os
-import sys
-
 import numpy as np
-
-sys.path.append(os.path.join(os.getcwd(), "src"))
-sys.path.append(os.path.join(os.getcwd(), "src", "lib"))
-print(sys.path)
-
 from lib.Autils_Object_detection import load_class_dict
 from lib.networks import get_model_instance
 from lib.utils import extract_experiment_parameters
@@ -14,7 +6,6 @@ from lib.utils import extract_experiment_parameters
 # configuration file
 config_file = "config/config.yml"
 
-print(sys.path)
 # extract the parameters from the config_file
 (
     device,
