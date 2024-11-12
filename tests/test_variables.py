@@ -1,9 +1,8 @@
-import sys
+# import sys
 
 import numpy as np
 
-sys.path.append("src")
-
+# sys.path.append("src")
 from lib.Autils_Object_detection import load_class_dict
 from lib.networks import get_model_instance
 from lib.utils import extract_experiment_parameters
