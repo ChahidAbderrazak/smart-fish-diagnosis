@@ -1,6 +1,5 @@
 import cv2
 import pytest
-
 from test_variables import (
     DIR_DEPLOY,
     CLASS_dict,
@@ -14,6 +13,8 @@ from test_variables import (
     val_iou_list,
 )
 
+# import sys
+# sys.path.append("src")
 from lib import logger
 from lib.Autils_Object_detection import (
     auto_epochs_definition,
