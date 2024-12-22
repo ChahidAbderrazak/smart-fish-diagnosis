@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 . .env
 command="bash "
 # command="python src/webapp.py "
@@ -29,4 +29,4 @@ docker ps
 
 # #### -----------------------   RUNNING THE PROJECT DOCKER-COMPOSE  -------------------------------
 # echo && echo "[${PROJECT_NAME}][Docker-compose[Jupyter] running the development container(s)..."
-# docker-compose  -p "${PROJECT_NAME}" -f docker-compose.yml up -d 
+# docker compose  -p "${PROJECT_NAME}" -f docker-compose.yml up -d 
