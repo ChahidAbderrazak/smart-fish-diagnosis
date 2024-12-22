@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 . .env
 command="bash "
 # command="python src/webapp.py "
